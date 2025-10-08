@@ -41,7 +41,7 @@ export default function Portfolio() {
                 <li><strong>Role:</strong> Full-stack developer (frontend + backend)</li>
                 <li><strong>Scope:</strong> Customer storefront + Admin panel</li>
                 <li><strong>Highlights:</strong> SKU-based product variants, hierarchical categories, pre-order logic</li>
-                <li><strong>APIs:</strong> /product (public), /admin/* (admin CRUD)</li>
+                <li><strong>APIs:</strong> /product (public), /admin</li>
               </ul>
 
               <div className="mt-6 flex gap-3">
