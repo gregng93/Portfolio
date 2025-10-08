@@ -2,7 +2,6 @@ import React from 'react'
 
 const EMAIL = 'gregng93@gmail.com'
 
-// Add or replace with your own screenshot paths (public folder or external links)
 const screenshots = [
   '/screenshot_storefront.png',
   '/screenshot_storefront_2.png',
@@ -19,6 +18,13 @@ const screenshots = [
 ]
 
 export default function Portfolio() {
+  const [selectedImage, setSelectedImage] = useState(null)
+
+  const handleImageClick = (src) => setSelectedImage(src)
+  const handleCloseModal = (e) => {
+    if (e.target.id === 'modal-bg') setSelectedImage(null)
+  }
+
   return (
     <div className="min-h-screen bg-white text-slate-900 antialiased">
       <header className="max-w-6xl mx-auto px-6 py-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
@@ -164,13 +170,27 @@ export default function Portfolio() {
           <h3 className="text-xl font-semibold">Screenshots</h3>
           <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {screenshots.map((s, idx) => (
-              <div key={idx} className="rounded-lg overflow-hidden border border-slate-100 bg-white">
+              <div key={idx} className="rounded-lg overflow-hidden border border-slate-100 bg-white" onClick={() => handleImageClick(s)>
                 <img src={s} alt={`screenshot-${idx}`} className="w-full h-44 object-cover" />
                 <div className="p-3 text-sm text-slate-700">{idx === 0 ? 'Storefront' : idx === 1 ? 'Storefront 2' : idx === 2 ? 'Product details' : idx === 3 ? 'Reviews' : idx === 4 ? 'Login' : idx === 5 ? 'Public Catalogues' : idx === 6 ? 'Rewards' : idx === 7 ? 'Admin - Dashboard' : idx === 8 ? 'Admin - Inquiries' : idx === 9 ? 'Admin - Management' : idx === 10 ? 'Admin - Order Details' : 'Admin - Voucher Management'}</div>
               </div>
             ))}
           </div>
         </section>
+		
+		{selectedImage && (
+        <div
+          id="modal-bg"
+          onClick={handleCloseModal}
+          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 cursor-pointer"
+        >
+          <img
+            src={selectedImage}
+            alt="screenshot enlarged"
+            className="max-w-4xl w-full max-h-[90vh] object-contain rounded-lg shadow-lg cursor-default"
+          />
+        </div>
+      )}
 
         {/* TECH STACK & ARCHITECTURE */}
         <section className="bg-slate-50 p-4 rounded">
