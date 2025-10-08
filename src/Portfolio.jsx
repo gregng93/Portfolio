@@ -178,20 +178,6 @@ export default function Portfolio() {
           </div>
         </section>
 		
-		{selectedImage && (
-        <div
-          id="modal-bg"
-          onClick={handleCloseModal}
-          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 cursor-pointer mt-0"
-        >
-          <img
-            src={selectedImage}
-            alt="screenshot enlarged"
-            className="max-w-4xl w-full max-h-[90vh] object-contain rounded-lg shadow-lg cursor-default"
-          />
-        </div>
-      )}
-
         {/* TECH STACK & ARCHITECTURE */}
         <section className="bg-slate-50 p-4 rounded">
           <div className="bg-white p-4 rounded border">
@@ -206,7 +192,21 @@ export default function Portfolio() {
           </div>
         </section>
       </main>
-
+	  
+	  {selectedImage && (
+        <div
+          id="modal-bg"
+          onClick={handleCloseModal}
+          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 cursor-pointer mt-0"
+        >
+          <img
+            src={selectedImage}
+            alt="screenshot enlarged"
+            className="max-w-4xl w-full max-h-[90vh] object-contain rounded-lg shadow-lg cursor-default"
+          />
+        </div>
+      )}
+	  
       <footer className="border-t border-slate-100 mt-12 py-6">
         <div className="max-w-6xl mx-auto px-6 text-sm text-slate-500">© {new Date().getFullYear()} Gregory Ng. {EMAIL}</div>
       </footer>
