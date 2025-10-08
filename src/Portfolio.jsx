@@ -182,7 +182,7 @@ export default function Portfolio() {
         <div
           id="modal-bg"
           onClick={handleCloseModal}
-          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 cursor-pointer"
+          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 cursor-pointer mt-0"
         >
           <img
             src={selectedImage}
