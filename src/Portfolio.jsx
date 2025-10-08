@@ -1,12 +1,7 @@
 import React from 'react'
 
-// Replace these placeholders with your real links
-const LIVE_SITE = 'https://example.com' // storefront
-const ADMIN_DEMO = 'https://example.com/admin' // admin panel (demo)
-const REPO = 'https://github.com/yourusername/your-repo'
 const EMAIL = 'you@example.com'
 
-// Add or replace with your own screenshot paths (public folder or external links)
 const screenshots = [
   '/screenshot_storefront.png',
   '/screenshot_product_detail.png',
@@ -22,14 +17,7 @@ export default function Portfolio() {
       <header className="max-w-6xl mx-auto px-6 py-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
         <div>
           <h1 className="text-3xl sm:text-4xl font-extrabold">Gregory Ng — Full Stack Developer</h1>
-          <p className="mt-2 text-slate-600">I build production-ready e‑commerce platforms.</p>
-		  <p className="mt-2 text-slate-600">Featured: Ardency — a full storefront + admin system with rich commerce features.</p>
-        </div>
-
-        <div className="flex gap-3">
-          <a href={LIVE_SITE} target="_blank" rel="noreferrer" className="inline-block bg-slate-900 text-white px-4 py-2 rounded-lg shadow">Open Storefront</a>
-          <a href={ADMIN_DEMO} target="_blank" rel="noreferrer" className="inline-block border border-slate-200 px-4 py-2 rounded-lg">Open Admin</a>
-          <a href={REPO} target="_blank" rel="noreferrer" className="inline-block border border-slate-200 px-4 py-2 rounded-lg">View Repo</a>
+          <p className="mt-2 text-slate-600">I build production-ready e‑commerce platforms. Featured: Ardency — a full storefront + admin system with rich commerce features.</p>
         </div>
       </header>
 
