@@ -37,16 +37,15 @@ export default function Portfolio() {
         <section className="bg-gradient-to-r from-white to-slate-50 rounded-2xl p-6 shadow-sm border border-slate-100">
           <div className="sm:flex sm:gap-6 items-center">
             <div className="sm:flex-1">
-              <h2 className="text-2xl font-semibold">Ardency — Full E‑commerce Platform (Featured)</h2>
-              <p className="mt-2 text-slate-600">A production-grade marketplace with a customer-facing storefront and a powerful admin dashboard for product, order and marketing operations.</p>
+              <h2 className="text-2xl font-semibold">Full E‑commerce Platform</h2>
+              <p className="mt-2 text-slate-600">A robust e-commerce solution designed to provide a seamless shopping experience for customers and powerful management tools for administrators. Built with a modern frontend and a scalable backend, it supports a wide array of functionalities from product browsing to order fulfillment and advanced analytics</p>
 
               <div className="mt-4 flex flex-wrap gap-2 text-sm text-slate-700">
-                <span className="px-2 py-1 bg-slate-100 rounded">React</span>
+                <span className="px-2 py-1 bg-slate-100 rounded">React JS</span>
                 <span className="px-2 py-1 bg-slate-100 rounded">.NET Core / EF Core</span>
                 <span className="px-2 py-1 bg-slate-100 rounded">SQL</span>
                 <span className="px-2 py-1 bg-slate-100 rounded">JWT / CSRF</span>
                 <span className="px-2 py-1 bg-slate-100 rounded">Backblaze</span>
-                <span className="px-2 py-1 bg-slate-100 rounded">Docker & Azure</span>
               </div>
 
               <ul className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-slate-700">
@@ -71,22 +70,42 @@ export default function Portfolio() {
 
         {/* DETAILED FEATURES */}
         <section>
-          <h3 className="text-xl font-semibold">Core features (derived from your repo)</h3>
+          <h3 className="text-xl font-semibold">Core E-commerce & Customer Experience</h3>
           <div className="mt-3 grid grid-cols-1 md:grid-cols-2 gap-6 text-slate-700">
             <div className="space-y-3">
-              <h4 className="font-semibold">Product & Catalog</h4>
+              <h4 className="font-semibold">Intuitive Product Catalog & Browsing:</h4>
               <ul className="list-disc pl-5">
                 <li>Hierarchical categories (Categories → Subcategories → Products).</li>
                 <li>SKU & Variant system — Specification, VariantValue, SKU mapping and stock/price per SKU.</li>
                 <li>Product images, gallery, and server-side image handling (Backblaze integration).</li>
                 <li>Redeemable products and voucher-aware product flows.</li>
+				<li>Dynamic product listings with categories and search capabilities.</li>
+				<li>Responsive design for a consistent experience across devices.</li>
               </ul>
 
               <h4 className="font-semibold mt-3">Cart & Checkout</h4>
               <ul className="list-disc pl-5">
-                <li>Persistent cart using CartContext, add/remove/update quantities.</li>
-                <li>Checkout flow with order creation, order item mapping and server-side validation.</li>
-                <li>Pre-order handling when price/quantity fields are intentionally omitted.</li>
+                <li>Effortless addition and management of items in the shopping cart.</li>
+                <li>Secure and guided checkout process for a smooth purchase journey.</li>
+                <li>Pre-order handling for items.</li>
+              </ul>
+			  
+			  <h4 className="font-semibold mt-3">Personalized User Accounts</h4>
+              <ul className="list-disc pl-5">
+                <li>Secure user registration, login, and password management (forgot/reset).</li>
+                <li>Personalized dashboards for order history, profile management, and loyalty points module.</li>
+              </ul>
+			  
+			  <h4 className="font-semibold mt-3">Customer Engagement & Support</h4>
+              <ul className="list-disc pl-5">
+                <li>Integrated customer review system for product feedback.</li>
+                <li>"Contact Us" forms and direct WhatsApp integration for immediate support.</li>
+              </ul>
+			  
+			  <h4 className="font-semibold mt-3">Loyalty & Rewards Program</h4>
+              <ul className="list-disc pl-5">
+                <li>Points system to reward customer loyalty and encourage repeat purchases.</li>
+                <li>Voucher redemption functionality for discounts and promotions.</li>
               </ul>
             </div>
 
@@ -108,6 +127,41 @@ export default function Portfolio() {
             </div>
           </div>
         </section>
+		<section>
+			<h3 className="text-xl font-semibold">Powerful Administrator & Business Management Tools</h3>
+          <div className="mt-3 grid grid-cols-1 md:grid-cols-2 gap-6 text-slate-700">
+            <div className="space-y-3">
+              <h4 className="font-semibold">Comprehensive Dashboard & Analytics</h4>
+              <ul className="list-disc pl-5">
+                <li>Centralized admin dashboard for an overview of business operations.</li>
+                <li>Sales analytics to track performance and identify trends.</li>
+                <li>Voucher analytics for monitoring promotional campaign effectiveness.</li>
+                <li>Admin dashboards & analytics for sales, vouchers and redeemable items.</li>
+              </ul>
+
+              <h4 className="font-semibold mt-3">Product & Inventory Control</h4>
+              <ul className="list-disc pl-5">
+                <li>Full CRUD (Create, Read, Update, Delete) capabilities for products and categories.</li>
+                <li>Management of product variants and specifications.</li>
+                <li>Dedicated sections for managing deleted products and categories.</li>
+              </ul>
+			  
+			  <h4 className="font-semibold mt-3">Order & Customer Relationship Management (CRM)</h4>
+              <ul className="list-disc pl-5">
+                <li>Detailed order listing and individual order detail views.</li>
+                <li>Review management to moderate and respond to customer feedback.</li>
+                <li>Inquiry management system to handle customer queries efficiently.</li>
+              </ul>
+			  
+			  <h4 className="font-semibold mt-3">Promotional & Marketing Tools</h4>
+              <ul className="list-disc pl-5">
+                <li>Robust voucher creation and management system.</li>
+                <li>Tools for redeeming vouchers and tracking their usage</li>
+                <li>Content & Asset Management with image manager for uploading, organizing, and linking product images.</li>
+              </ul>
+            </div>
+          </div>
+		</section>
 
         {/* CASE STUDY */}
         <section className="bg-slate-50 p-4 rounded">
