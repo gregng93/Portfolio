@@ -1,10 +1,6 @@
 import React from 'react'
 
-// Replace these placeholders with your real links
-const LIVE_SITE = 'https://example.com' // storefront
-const ADMIN_DEMO = 'https://example.com/admin' // admin panel (demo)
-const REPO = 'https://github.com/yourusername/your-repo'
-const EMAIL = 'you@example.com'
+const EMAIL = 'gregng93@gmail.com'
 
 // Add or replace with your own screenshot paths (public folder or external links)
 const screenshots = [
@@ -28,7 +24,8 @@ export default function Portfolio() {
       <header className="max-w-6xl mx-auto px-6 py-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
         <div>
           <h1 className="text-3xl sm:text-4xl font-extrabold">Gregory Ng — Full Stack Developer</h1>
-          <p className="mt-2 text-slate-600">I build production-ready e‑commerce platforms. Featured: Ardency — a full storefront + admin system with rich commerce features.</p>
+          <p className="mt-2 text-slate-600">Built production-ready e‑commerce platforms with inventory management systems.</p>
+		  <p className="mt-2 text-slate-600">Featured: Ardency — a full storefront + admin system with rich integrated features.</p>
         </div>
 
         <div className="flex gap-3"></div>
@@ -41,7 +38,7 @@ export default function Portfolio() {
           <div className="sm:flex sm:gap-6 items-center">
             <div className="sm:flex-1">
               <h2 className="text-2xl font-semibold">E‑commerce Platform</h2>
-              <p className="mt-2 text-slate-600">A robust e-commerce solution designed to provide a seamless shopping experience for customers and powerful management tools for administrators. Built with a modern frontend and a scalable backend, it supports a wide array of functionalities from product browsing to order fulfillment and advanced analytics.</p>
+              <p className="mt-2 text-slate-600">A robust e-commerce solution, including a backend inventory management system, designed to provide a seamless shopping experience for customers and powerful management tools for administrators. Built with a modern frontend and a scalable backend, it supports a wide array of functionalities from product browsing to order fulfillment and advanced analytics.</p>
 
               <div className="mt-4 flex flex-wrap gap-2 text-sm text-slate-700">
                 <span className="px-2 py-1 bg-slate-100 rounded">React JS</span>
@@ -129,7 +126,8 @@ export default function Portfolio() {
               <ul className="list-disc pl-5">
                 <li>Full CRUD (Create, Read, Update, Delete) capabilities for products and categories.</li>
                 <li>Management of product variants and specifications.</li>
-                <li>Dedicated sections for managing deleted products and categories.</li>
+                <li>Dedicated functionality for managing deleted products and categories.</li>
+				<li>Stock management designed to increaase efficiency.</li>
               </ul>
 			  </div>
 			  <div className="space-y-3">
@@ -157,7 +155,6 @@ export default function Portfolio() {
             <p><strong>Architecture:</strong> React frontend and a .NET Web API backend (Entity Framework Core) hosting all business logic and data persistence. Media stored in Backblaze.</p>
             <p><strong>Security:</strong> JWT-based auth for API access, CSRF protection for admin actions, server-side validation to ensure SKU integrity and order correctness.</p>
             <p><strong>Operational:</strong> Background services for voucher expiry notifications, points expiry, log rotation, and queued email sending.</p>
-            <p><strong>Challenges:</strong> Mapping UI variant selections to canonical SKU entries, keeping frontend validation in sync with backend, and maintaining a usable admin UX for non-technical product managers.</p>
           </div>
         </section>
 
@@ -175,7 +172,7 @@ export default function Portfolio() {
         </section>
 
         {/* TECH STACK & ARCHITECTURE */}
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <section className="bg-slate-50 p-4 rounded">
           <div className="bg-white p-4 rounded border">
             <h4 className="font-semibold">Technicals</h4>
             <ul className="mt-3 text-slate-700 list-disc pl-5">
