@@ -1,6 +1,4 @@
 import React from 'react'
-</ul>
-
 
 <h4 className="font-semibold mt-3">Cart & Checkout</h4>
 <ul className="list-disc pl-5">
