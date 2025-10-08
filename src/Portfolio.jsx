@@ -48,8 +48,6 @@ export default function Portfolio() {
               <ul className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-slate-700">
                 <li><strong>Role:</strong> Full-stack (frontend + backend)</li>
                 <li><strong>Components:</strong> Storefront, Admin dashboard, API</li>
-                <li><strong>Key models:</strong> Product, Variant, Category, SKU, Order, Voucher, Points</li>
-                <li><strong>Admin endpoints:</strong> /admin/* (product, orders, vouchers, images, reports)</li>
               </ul>
             </div>
 
@@ -70,7 +68,7 @@ export default function Portfolio() {
           <h3 className="text-xl font-semibold">I. Core E-commerce & Customer Experience</h3>
           <div className="mt-3 grid grid-cols-1 md:grid-cols-2 gap-6 text-slate-700">
             <div className="space-y-3">
-              <h4 className="font-semibold">Intuitive Product Catalog & Browsing:</h4>
+              <h4 className="font-semibold mt-3">Intuitive Product Catalog & Browsing:</h4>
               <ul className="list-disc pl-5">
                 <li>Hierarchical categories (Categories → Subcategories → Products).</li>
                 <li>SKU & Variant system — Specification, VariantValue, SKU mapping and stock/price per SKU.</li>
@@ -148,12 +146,12 @@ export default function Portfolio() {
 
         {/* CASE STUDY */}
         <section className="bg-slate-50 p-4 rounded">
-          <h3 className="text-lg font-semibold">Case study — Technical approach</h3>
+          <h3 className="text-lg font-semibold">Technical approach</h3>
           <div className="mt-2 text-slate-700 space-y-2">
-            <p><strong>Architecture:</strong> React frontend served separately (Vercel) and a .NET Web API backend (Entity Framework Core) hosting all business logic and data persistence. Media stored in Backblaze and served via signed URLs.</p>
+            <p><strong>Architecture:</strong> React frontend and a .NET Web API backend (Entity Framework Core) hosting all business logic and data persistence. Media stored in Backblaze.</p>
             <p><strong>Security:</strong> JWT-based auth for API access, CSRF protection for admin actions, server-side validation to ensure SKU integrity and order correctness.</p>
-            <p><strong>Operational concerns:</strong> Background services for voucher expiry notifications, points expiry, log rotation, and queued email sending.</p>
-            <p><strong>Challenges:</strong> Mapping UI variant selections to canonical SKU entries, keeping frontend validation in sync with backend, and maintaining a usable admin UX for non-technical product managers. Implemented canonical SKU mapping on the backend and defensive UI controls on the frontend.</p>
+            <p><strong>Operational:</strong> Background services for voucher expiry notifications, points expiry, log rotation, and queued email sending.</p>
+            <p><strong>Challenges:</strong> Mapping UI variant selections to canonical SKU entries, keeping frontend validation in sync with backend, and maintaining a usable admin UX for non-technical product managers.</p>
           </div>
         </section>
 
@@ -173,9 +171,9 @@ export default function Portfolio() {
         {/* TECH STACK & ARCHITECTURE */}
         <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-white p-4 rounded border">
-            <h4 className="font-semibold">Tech stack</h4>
+            <h4 className="font-semibold">Technicals</h4>
             <ul className="mt-3 text-slate-700 list-disc pl-5">
-              <li>Frontend: React (create-react-app / Vite adaptable), Context (Auth/Cart/Loading), CSS modules & componentized UI.</li>
+              <li>Frontend: React JS, Context (Auth/Cart/Loading), CSS modules & componentized UI.</li>
               <li>Backend: .NET Core Web API, Entity Framework Core, SQL Server / Postgres.</li>
               <li>Auth & Security: JWT, CSRF protection, server-side validation.</li>
               <li>Media: Backblaze (image service & signed uploads), image manager in admin.</li>
@@ -193,23 +191,10 @@ export default function Portfolio() {
             </ul>
           </div>
         </section>
-
-        {/* DEMO & CONTACT */}
-        <section className="bg-slate-50 p-4 rounded flex flex-col md:flex-row items-start justify-between gap-4">
-          <div>
-            <h4 className="font-semibold">Demo & How to try</h4>
-            <p className="mt-2 text-slate-700">Open the storefront and admin links above. If you want me to include a temporary admin demo account in the live portfolio, paste the credentials and I will add them into the demo section.</p>
-          </div>
-
-          <div className="text-right">
-            <p className="text-slate-700">Email: <a href={`mailto:${EMAIL}`} className="text-emerald-600">{EMAIL}</a></p>
-            <a href={REPO} target="_blank" rel="noreferrer" className="inline-block mt-3 bg-slate-900 text-white px-4 py-2 rounded">View Source</a>
-          </div>
-        </section>
       </main>
 
       <footer className="border-t border-slate-100 mt-12 py-6">
-        <div className="max-w-6xl mx-auto px-6 text-sm text-slate-500">© {new Date().getFullYear()} Gregory Ng. Built with React &amp; .NET.</div>
+        <div className="max-w-6xl mx-auto px-6 text-sm text-slate-500">© {new Date().getFullYear()} Gregory Ng. Built with React.</div>
       </footer>
     </div>
   )
