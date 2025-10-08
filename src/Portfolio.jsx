@@ -9,11 +9,17 @@ const EMAIL = 'you@example.com'
 // Add or replace with your own screenshot paths (public folder or external links)
 const screenshots = [
   '/screenshot_storefront.png',
-  '/screenshot_product_detail.png',
-  '/screenshot_admin_products.png',
-  '/screenshot_admin_orders.png',
-  '/screenshot_admin_images.png',
-  '/screenshot_analytics.png',
+  '/screenshot_storefront_2.png',
+  '/screenshot_productdetail.png',
+  '/screenshot_review.png',
+  '/screenshot_login.png',
+  '/screenshot_catalogue.png',
+  '/screenshot_rewards.png',
+  '/screenshot_admin.png',
+  '/screenshot_admin_inquiry.png',
+  '/screenshot_admin_management.png',
+  '/screenshot_admin_orderdetail.png',
+  '/screenshot_vouchermanagement.png',
 ]
 
 export default function Portfolio() {
@@ -111,12 +117,12 @@ export default function Portfolio() {
 		  <h3 className="text-xl font-semibold">II. Powerful Administrator & Business Management Tools</h3>
           <div className="mt-3 grid grid-cols-1 md:grid-cols-2 gap-6 text-slate-700">
             <div className="space-y-3">
-              <h4 className="font-semibold">Comprehensive Dashboard & Analytics</h4>
+              <h4 className="font-semibold mt-3">Comprehensive Dashboard & Analytics</h4>
               <ul className="list-disc pl-5">
                 <li>Centralized admin dashboard for an overview of business operations.</li>
                 <li>Sales analytics to track performance and identify trends.</li>
                 <li>Voucher analytics for monitoring promotional campaign effectiveness.</li>
-                <li>Admin dashboards & analytics for sales, vouchers and redeemable items.</li>
+                <li>Role-based access for admin-related modules.</li>
               </ul>
 
               <h4 className="font-semibold mt-3">Product & Inventory Control</h4>
@@ -162,7 +168,7 @@ export default function Portfolio() {
             {screenshots.map((s, idx) => (
               <div key={idx} className="rounded-lg overflow-hidden border border-slate-100 bg-white">
                 <img src={s} alt={`screenshot-${idx}`} className="w-full h-44 object-cover" />
-                <div className="p-3 text-sm text-slate-700">{idx === 0 ? 'Storefront' : idx === 1 ? 'Product detail' : idx === 2 ? 'Admin products' : idx === 3 ? 'Admin orders' : idx === 4 ? 'Image manager' : 'Analytics'}</div>
+                <div className="p-3 text-sm text-slate-700">{idx === 0 ? 'Storefront' : idx === 1 ? 'Storefront 2' : idx === 2 ? 'Product details' : idx === 3 ? 'Reviews' : idx === 4 ? 'Login' : idx === 5 ? 'Public Catalogues' : idx === 6 ? 'Rewards' : idx === 7 ? 'Admin - Dashboard' : idx === 8 ? 'Admin - Inquiries' : idx === 9 ? 'Admin - Management' : idx === 10 ? 'Admin - Order Details' : 'Admin - Voucher Management'}</div>
               </div>
             ))}
           </div>
@@ -180,21 +186,11 @@ export default function Portfolio() {
               <li>Operations: Background hosted services for points/voucher expiry and log rotation.</li>
             </ul>
           </div>
-
-          <div className="bg-white p-4 rounded border">
-            <h4 className="font-semibold">API surface & models</h4>
-            <ul className="mt-3 text-slate-700 list-disc pl-5">
-              <li><code>/product</code> (public) — product listing, details, search.</li>
-              <li><code>/cart</code> — cart operations.</li>
-              <li><code>/checkout</code> / <code>/orders</code> — order creation & management.</li>
-              <li><code>/admin/*</code> — admin CRUD for products, categories, vouchers, images, orders, reviews.</li>
-            </ul>
-          </div>
         </section>
       </main>
 
       <footer className="border-t border-slate-100 mt-12 py-6">
-        <div className="max-w-6xl mx-auto px-6 text-sm text-slate-500">© {new Date().getFullYear()} Gregory Ng. Built with React.</div>
+        <div className="max-w-6xl mx-auto px-6 text-sm text-slate-500">© {new Date().getFullYear()} Gregory Ng. {EMAIL}</div>
       </footer>
     </div>
   )
