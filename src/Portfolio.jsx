@@ -2,6 +2,7 @@ import React from 'react'
 
 const EMAIL = 'you@example.com'
 
+// Add or replace with your own screenshot paths (public folder or external links)
 const screenshots = [
   '/screenshot_storefront.png',
   '/screenshot_product_detail.png',
@@ -18,6 +19,9 @@ export default function Portfolio() {
         <div>
           <h1 className="text-3xl sm:text-4xl font-extrabold">Gregory Ng — Full Stack Developer</h1>
           <p className="mt-2 text-slate-600">I build production-ready e‑commerce platforms. Featured: Ardency — a full storefront + admin system with rich commerce features.</p>
+        </div>
+
+        <div className="flex gap-3">
         </div>
       </header>
 
