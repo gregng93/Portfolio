@@ -2,7 +2,6 @@ import React from 'react'
 
 const EMAIL = 'gregng93@gmail.com'
 
-// Add or replace with your own screenshot paths (public folder or external links)
 const screenshots = [
   '/screenshot_storefront.png',
   '/screenshot_storefront_2.png',
