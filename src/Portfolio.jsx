@@ -1,5 +1,9 @@
 import React from 'react'
 
+// Replace these placeholders with your real links
+const LIVE_SITE = 'https://example.com' // storefront
+const ADMIN_DEMO = 'https://example.com/admin' // admin panel (demo)
+const REPO = 'https://github.com/yourusername/your-repo'
 const EMAIL = 'you@example.com'
 
 // Add or replace with your own screenshot paths (public folder or external links)
@@ -21,8 +25,8 @@ export default function Portfolio() {
           <p className="mt-2 text-slate-600">I build production-ready e‑commerce platforms. Featured: Ardency — a full storefront + admin system with rich commerce features.</p>
         </div>
 
-        <div className="flex gap-3">
-        </div>
+        <div className="flex gap-3"></div>
+
       </header>
 
       <main className="max-w-6xl mx-auto px-6 pb-20 space-y-8">
