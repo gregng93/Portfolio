@@ -113,7 +113,7 @@ export default function Portfolio() {
           </div>
         </section>
 		<section>
-			<h3 className="text-xl font-semibold">Powerful Administrator & Business Management Tools</h3>
+		  <h3 className="text-xl font-semibold">Powerful Administrator & Business Management Tools</h3>
           <div className="mt-3 grid grid-cols-1 md:grid-cols-2 gap-6 text-slate-700">
             <div className="space-y-3">
               <h4 className="font-semibold">Comprehensive Dashboard & Analytics</h4>
@@ -130,7 +130,8 @@ export default function Portfolio() {
                 <li>Management of product variants and specifications.</li>
                 <li>Dedicated sections for managing deleted products and categories.</li>
               </ul>
-			  
+			  </div>
+			  <div className="space-y-3">
 			  <h4 className="font-semibold mt-3">Order & Customer Relationship Management (CRM)</h4>
               <ul className="list-disc pl-5">
                 <li>Detailed order listing and individual order detail views.</li>
