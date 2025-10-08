@@ -19,7 +19,6 @@ const screenshots = [
 
 export default function Portfolio() {
   const [selectedImage, setSelectedImage] = useState(null)
-  const [selectedImage, setSelectedImage] = useState(null)
   const [zoom, setZoom] = useState(1)
   const [initialDistance, setInitialDistance] = useState(null)
 
