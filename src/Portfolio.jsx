@@ -24,8 +24,9 @@ export default function Portfolio() {
       <header className="max-w-6xl mx-auto px-6 py-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
         <div>
           <h1 className="text-3xl sm:text-4xl font-extrabold">Gregory Ng — Full Stack Developer</h1>
+		  <p className="mt-2 text-slate-600">Email: {EMAIL}</p>
           <p className="mt-2 text-slate-600">Built production-ready e‑commerce platforms with inventory management systems.</p>
-		  <p className="mt-2 text-slate-600">Featured: Ardency — a full storefront + admin system with rich integrated features.</p>
+		  <p className="mt-2 text-slate-600">Featured Project: Ardency — a full storefront + admin system with rich integrated features.</p>
         </div>
 
         <div className="flex gap-3"></div>
