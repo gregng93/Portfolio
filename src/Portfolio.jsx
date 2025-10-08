@@ -170,7 +170,7 @@ export default function Portfolio() {
           <h3 className="text-xl font-semibold">Screenshots</h3>
           <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {screenshots.map((s, idx) => (
-              <div key={idx} className="rounded-lg overflow-hidden border border-slate-100 bg-white" onClick={() => handleImageClick(s)>
+              <div key={idx} className="rounded-lg overflow-hidden border border-slate-100 bg-white" onClick={() => handleImageClick(s)}>
                 <img src={s} alt={`screenshot-${idx}`} className="w-full h-44 object-cover" />
                 <div className="p-3 text-sm text-slate-700">{idx === 0 ? 'Storefront' : idx === 1 ? 'Storefront 2' : idx === 2 ? 'Product details' : idx === 3 ? 'Reviews' : idx === 4 ? 'Login' : idx === 5 ? 'Public Catalogues' : idx === 6 ? 'Rewards' : idx === 7 ? 'Admin - Dashboard' : idx === 8 ? 'Admin - Inquiries' : idx === 9 ? 'Admin - Management' : idx === 10 ? 'Admin - Order Details' : 'Admin - Voucher Management'}</div>
               </div>
