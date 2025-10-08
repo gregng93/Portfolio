@@ -89,8 +89,10 @@ export default function Portfolio() {
                 <li>Secure and guided checkout process for a smooth purchase journey.</li>
                 <li>Pre-order handling for items.</li>
               </ul>
-			  
-			  <h4 className="font-semibold mt-3">Personalized User Accounts</h4>
+            </div>
+
+            <div className="space-y-3">
+              <h4 className="font-semibold mt-3">Personalized User Accounts</h4>
               <ul className="list-disc pl-5">
                 <li>Secure user registration, login, and password management (forgot/reset).</li>
                 <li>Personalized dashboards for order history, profile management, and loyalty points module.</li>
@@ -106,23 +108,6 @@ export default function Portfolio() {
               <ul className="list-disc pl-5">
                 <li>Points system to reward customer loyalty and encourage repeat purchases.</li>
                 <li>Voucher redemption functionality for discounts and promotions.</li>
-              </ul>
-            </div>
-
-            <div className="space-y-3">
-              <h4 className="font-semibold">Admin & Operations</h4>
-              <ul className="list-disc pl-5">
-                <li>Admin product management (create/edit/delete), including SKU / variant editors.</li>
-                <li>Admin order management, order detail view and status updates.</li>
-                <li>Image manager for uploads and media maintenance.</li>
-                <li>Admin dashboards & analytics for sales, vouchers and redeemable items.</li>
-              </ul>
-
-              <h4 className="font-semibold mt-3">Marketing & Loyalty</h4>
-              <ul className="list-disc pl-5">
-                <li>Vouchers and voucher templates with analytics & redemption tracking.</li>
-                <li>Points system: points transactions, expiry services and user voucher mapping.</li>
-                <li>Wishlist, user vouchers and redeem flows for loyalty-driven purchases.</li>
               </ul>
             </div>
           </div>
