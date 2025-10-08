@@ -28,8 +28,7 @@ export default function Portfolio() {
           <div className="sm:flex sm:gap-6 items-center">
             <div className="sm:flex-1">
               <h2 className="text-2xl font-semibold">E‑commerce Platform</h2>
-              <p className="mt-2 text-slate-600">A robust e-commerce solution designed to provide a seamless shopping experience for customers and powerful management tools for administrators. Built with a modern frontend and a scalable backend, 
-			  it supports a wide array of functionalities from product browsing to order fulfillment and advanced analytics.</p>
+              <p className="mt-2 text-slate-600">A robust e-commerce solution designed to provide a seamless shopping experience for customers and powerful management tools for administrators. Built with a modern frontend and a scalable backend, it supports a wide array of functionalities from product browsing to order fulfillment and advanced analytics.</p>
 
               <div className="mt-4 flex flex-wrap gap-2 text-sm text-slate-700">
                 <span className="px-2 py-1 bg-slate-100 rounded">React JS</span>
