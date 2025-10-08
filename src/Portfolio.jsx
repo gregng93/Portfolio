@@ -1,60 +1,7 @@
-/*
-Portfolio (single-file React component) + Setup & Vercel deploy notes
-
-How to use (quick):
-1) Create a new Vite React project (recommended):
-   npm create vite@latest portfolio -- --template react
-   cd portfolio
-   npm install
-
-2) Install Tailwind CSS (official quick setup):
-   npm install -D tailwindcss postcss autoprefixer
-   npx tailwindcss init -p
-
-   Replace tailwind.config.cjs (or .js) content with:
-   module.exports = {
-     content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
-     theme: { extend: {} },
-     plugins: [],
-   }
-
-   In src/index.css (or create it), add:
-   @tailwind base;
-   @tailwind components;
-   @tailwind utilities;
-
-3) Add this file as src/Portfolio.jsx and in src/main.jsx import and render it:
-   import React from 'react'
-   import ReactDOM from 'react-dom/client'
-   import './index.css'
-   import Portfolio from './Portfolio'
-
-   ReactDOM.createRoot(document.getElementById('root')).render(
-     <React.StrictMode>
-       <Portfolio />
-     </React.StrictMode>
-   )
-
-4) Start dev server:
-   npm run dev
-
-5) Build for production:
-   npm run build
-
-Vercel deployment (quick):
-- Push your project to GitHub (or GitLab). Connect the repo in Vercel.
-- Vercel will auto-detect a Vite React app. Build command: `npm run build` (default).
-- Output directory: `dist` (default).
-- No special config required unless you have server-side functions.
-
-Notes & placeholders inside the component:
-- Replace LINK_LIVE_SITE, LINK_ADMIN, LINK_REPO, and EMAIL placeholders with your real info.
-- Replace screenshot URLs with your actual screenshots or local /public images.
-- If you want a ready-to-deploy repository (package.json, tailwind config, index.html), tell me and I can generate those files too.
-*/
-
 import React from 'react'
 
+// NOTE: To keep this file build-safe, long instructions and code samples were moved to README.md.
+// Replace the placeholders below with your real links before deploying.
 const LIVE_SITE = 'https://example.com' // replace with your live site
 const ADMIN_DEMO = 'https://example.com/admin' // replace or leave blank
 const REPO = 'https://github.com/yourusername/your-repo' // replace
@@ -75,7 +22,6 @@ export default function Portfolio() {
       </header>
 
       <main className="max-w-5xl mx-auto px-6 pb-20">
-        {/* Featured project card */}
         <section className="bg-gradient-to-r from-white to-slate-50 rounded-2xl p-6 shadow-sm border border-slate-100">
           <div className="sm:flex sm:gap-6">
             <div className="sm:flex-1">
@@ -116,7 +62,6 @@ export default function Portfolio() {
           </div>
         </section>
 
-        {/* Case study */}
         <section className="mt-8">
           <h3 className="text-xl font-semibold">Case study — Problem & Approach</h3>
           <div className="mt-3 text-slate-700">
@@ -136,7 +81,6 @@ export default function Portfolio() {
           </div>
         </section>
 
-        {/* Screenshots */}
         <section className="mt-8">
           <h3 className="text-xl font-semibold">Screenshots</h3>
           <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -149,7 +93,6 @@ export default function Portfolio() {
           </div>
         </section>
 
-        {/* How to try / demo credentials */}
         <section className="mt-8 bg-slate-50 p-4 rounded">
           <h3 className="text-lg font-semibold">Demo & How to try</h3>
           <p className="mt-2 text-slate-700">Open the storefront link above. For admin access (demo), you can add temporary credentials here or request access. Example (replace with real demo creds if you want):</p>
@@ -157,7 +100,6 @@ export default function Portfolio() {
 Password: DemoPass123</pre>
         </section>
 
-        {/* Contact & Resume */}
         <section className="mt-8 flex flex-col sm:flex-row gap-6 items-start justify-between p-6 border border-slate-100 rounded">
           <div>
             <h4 className="text-lg font-semibold">Contact</h4>
