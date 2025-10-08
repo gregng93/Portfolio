@@ -18,6 +18,13 @@ const screenshots = [
 ]
 
 export default function Portfolio() {
+  const [selectedImage, setSelectedImage] = useState(null)
+
+  const handleImageClick = (src) => setSelectedImage(src)
+  const handleCloseModal = (e) => {
+    if (e.target.id === 'modal-bg') setSelectedImage(null)
+  }
+
   return (
     <div className="min-h-screen bg-white text-slate-900 antialiased">
       <header className="max-w-6xl mx-auto px-6 py-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
