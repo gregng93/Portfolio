@@ -70,7 +70,7 @@ export default function Portfolio() {
 
         {/* DETAILED FEATURES */}
         <section>
-          <h3 className="text-xl font-semibold">Core E-commerce & Customer Experience</h3>
+          <h3 className="text-xl font-semibold">I. Core E-commerce & Customer Experience</h3>
           <div className="mt-3 grid grid-cols-1 md:grid-cols-2 gap-6 text-slate-700">
             <div className="space-y-3">
               <h4 className="font-semibold">Intuitive Product Catalog & Browsing:</h4>
@@ -113,7 +113,7 @@ export default function Portfolio() {
           </div>
         </section>
 		<section>
-		  <h3 className="text-xl font-semibold">Powerful Administrator & Business Management Tools</h3>
+		  <h3 className="text-xl font-semibold">II. Powerful Administrator & Business Management Tools</h3>
           <div className="mt-3 grid grid-cols-1 md:grid-cols-2 gap-6 text-slate-700">
             <div className="space-y-3">
               <h4 className="font-semibold">Comprehensive Dashboard & Analytics</h4>
