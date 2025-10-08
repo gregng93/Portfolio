@@ -19,8 +19,6 @@ const screenshots = [
 
 export default function Portfolio() {
   const [selectedImage, setSelectedImage] = useState(null)
-  const [zoom, setZoom] = useState(1)
-  const [initialDistance, setInitialDistance] = useState(null)
 
   const handleImageClick = (src) => setSelectedImage(src)
   const handleCloseModal = (e) => {
@@ -202,48 +200,14 @@ export default function Portfolio() {
     className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 cursor-pointer"
   >
     <div
-      onClick={(e) => e.stopPropagation()} // prevent close when clicking image
-      className="relative overflow-hidden"
+      onClick={(e) => e.stopPropagation()} // prevent closing when clicking image
+      className="animate-zoomIn"
     >
       <img
         src={selectedImage}
         alt="screenshot enlarged"
-        className="max-w-4xl w-full max-h-[90vh] object-contain rounded-lg shadow-lg cursor-zoom-in transition-transform duration-200 ease-in-out"
-        style={{
-          transform: `scale(${zoom})`,
-          touchAction: 'none',
-        }}
-        onWheel={(e) => {
-          e.preventDefault()
-          setZoom((z) => Math.min(Math.max(z + e.deltaY * -0.001, 1), 3))
-        }}
-        onTouchStart={(e) => {
-          if (e.touches.length === 2) {
-            const dx = e.touches[0].pageX - e.touches[1].pageX
-            const dy = e.touches[0].pageY - e.touches[1].pageY
-            setInitialDistance(Math.sqrt(dx * dx + dy * dy))
-          }
-        }}
-        onTouchMove={(e) => {
-          if (e.touches.length === 2 && initialDistance) {
-            const dx = e.touches[0].pageX - e.touches[1].pageX
-            const dy = e.touches[0].pageY - e.touches[1].pageY
-            const newDist = Math.sqrt(dx * dx + dy * dy)
-            const scaleChange = newDist / initialDistance
-            setZoom((z) => Math.min(Math.max(z * scaleChange, 1), 3))
-          }
-        }}
-        onTouchEnd={() => setInitialDistance(null)}
-        onDoubleClick={() =>
-          setZoom((z) => (z === 1 ? 2 : 1))
-        } // double-tap zoom toggle
+        className="max-w-5xl w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
       />
-      <button
-        onClick={() => setZoom(1)}
-        className="absolute top-3 right-3 bg-white/80 text-black px-3 py-1 rounded-md text-sm hover:bg-white"
-      >
-        Reset Zoom
-      </button>
     </div>
   </div>
 )}
