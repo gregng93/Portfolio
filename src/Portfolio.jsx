@@ -1,5 +1,13 @@
 import React from 'react'
 </ul>
+
+
+<h4 className="font-semibold mt-3">Cart & Checkout</h4>
+<ul className="list-disc pl-5">
+<li>Persistent cart using CartContext, add/remove/update quantities.</li>
+<li>Checkout flow with order creation, order item mapping and server-side validation.</li>
+<li>Pre-order handling when price/quantity fields are intentionally omitted.</li>
+</ul>
 </div>
 
 
